@@ -47,9 +47,13 @@ const NoteForm = ({id}) => {
   return (
     <div>
       <form>
-        <label htmlFor="note"></label>
-        <input onChange={addingMessage} type="text" name="note" value={message} placeholder={id===state.note.categoryId?state.note.message:''}/>
-        {id===state.note.categoryId?<button onClick={editNote}>Edit note</button>:<button onClick={addNote}>Add note</button>}
+        <div className="input-group mb-3">
+          <label htmlFor="note"></label>
+          <input className="form-control mt-2 me-2" onChange={addingMessage} type="text" name="note" value={message} placeholder={id === state.note.categoryId ? state.note.message : ''} />
+          {id === state.note.categoryId ?
+            <button className="btn btn-success mt-2 me-3" onClick={editNote}>Edit note</button>
+            : <button className="btn btn-success mt-2 me-3" onClick={addNote}>Add note</button>}
+        </div>
       </form>
     </div>
   )

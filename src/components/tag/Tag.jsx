@@ -6,7 +6,8 @@ const Tag = (tag) => {
         <div>
             {console.log("notes Tag")}
             {console.log(tag.tag)}
-            {tag.tag}</div>
+            {tag.tag}
+        </div>
     )
 }
 

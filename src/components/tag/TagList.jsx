@@ -5,10 +5,7 @@ import TagForm from './TagForm'
 const TagList = ({note}) => {
     return (
         <div>
-            {/* <Tag id={notes} /> */}
-            {console.log("notes tagList")}
-            {console.log(note)}
-            {note.map(not => <Tag tag={not.tag} />)}
+            {note.map(note => <Tag key={note.id}tag={note.tag} />)}
         </div>
     )
 }
