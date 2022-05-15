@@ -51,8 +51,8 @@ const NoteForm = ({id}) => {
           <label htmlFor="note"></label>
           <input className="form-control mt-2 me-2" onChange={addingMessage} type="text" name="note" value={message} placeholder={id === state.note.categoryId ? state.note.message : ''} />
           {id === state.note.categoryId ?
-            <button className="btn btn-success mt-2 me-3" onClick={editNote}>Edit note</button>
-            : <button className="btn btn-success mt-2 me-3" onClick={addNote}>Add note</button>}
+            <button className="btn btn-dark"  onClick={editNote}>Edit note</button>
+            : <button className="btn btn-dark" onClick={addNote}>Add note</button>}
         </div>
       </form>
     </div>

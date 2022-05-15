@@ -32,7 +32,7 @@ const CategoryForm = () => {
     <form>
       <label htmlFor="category"></label>
       <input onChange={addingTitle} type="text" name="category" value={title}/>
-      <button onClick={addCategory}>Add category</button>
+      <button className='btn btn-dark' onClick={addCategory}>Add category</button>
     </form>
   )
 }

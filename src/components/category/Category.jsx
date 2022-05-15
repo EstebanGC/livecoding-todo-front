@@ -21,7 +21,7 @@ const Category = ({category: {id, title, notes}}) => {
   return (
     <div>
       <h2>{title}</h2>
-      <button onClick={() => deleteCategory(id)}>Delete category</button>
+      <button className='btn btn-dark' onClick={() => deleteCategory(id)}>Delete category</button>
       <NoteList id={id} notes={notes}/>
     </div>
   )
